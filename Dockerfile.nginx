@@ -1,0 +1,5 @@
+FROM nginx:latest
+
+# Ersetze die Standardkonfiguration von Nginx
+COPY nginx.conf /etc/nginx/nginx.conf
+
