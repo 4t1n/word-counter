@@ -3,7 +3,7 @@ services:
   web1:
     build:
       context: .
-      dockerfile: Dockerfile.web
+      dockerfile: Dockerfile.webserver
     volumes:
       - .:/usr/src/app
     ports:
@@ -12,7 +12,7 @@ services:
   web2:
     build:
       context: .
-      dockerfile: Dockerfile.web
+      dockerfile: Dockerfile.webserver
     volumes:
       - .:/usr/src/app
     ports:
@@ -21,7 +21,7 @@ services:
   loadbalancer:
     build:
       context: .
-      dockerfile: Dockerfile.nginx
+      dockerfile: Dockerfile.loadbalancer
     ports:
       - "80:80"
     links:

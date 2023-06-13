@@ -1,0 +1,6 @@
+FROM nginx:latest
+
+COPY index.html /var/www/html/
+COPY js/ /var/www/html/js/
+COPY css/ /var/www/html/css/
+COPY nginx.conf.webserver /etc/nginx/conf.d/default.conf

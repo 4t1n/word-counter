@@ -1,0 +1,6 @@
+FROM nginx:latest
+
+# Ersetze die Standardkonfiguration von Nginx
+COPY nginx.conf.loadbalancer /etc/nginx/nginx.conf
+
+EXPOSE 80
