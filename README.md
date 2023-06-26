@@ -13,7 +13,7 @@ This project demonstrates a basic setup of Nginx web servers and a load balancer
     nginx.conf.webserver: Nginx configuration for the web servers
     nginx.conf.loadbalancer: Nginx configuration for the load balancer
     Dockerfile.webserver: Dockerfile for building the web server Docker image
-    Dockerfile.loadbalancer: Dockerfile for building the load balancer Docker image
+    Dockerfile.loadbalancer: Dockerfile for building the load balancing Docker image
     docker-compose.yml: Docker Compose file for starting the application
     index.html, js/, css/: Static content for the web servers
 
